@@ -23,6 +23,15 @@ header {
   }
 }
 
+.button.hollow {
+  &:hover,
+  &:focus {
+    background: $white;
+    border-color: $white;
+    color: $black;
+  }
+}
+
 @include breakpoint(large) {
   .large-line-breaks span {
     display: block;
