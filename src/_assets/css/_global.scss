@@ -1,0 +1,43 @@
+.main {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-weight: 300;
+
+  p {
+    margin: 0;
+  }
+}
+
+header {
+  padding-bottom: 3rem;
+
+  img {
+    height: rem-calc(145);
+  }
+}
+
+@include breakpoint(large) {
+  .large-line-breaks span {
+    display: block;
+  }
+}
+
+@include breakpoint(small down) {
+  html {
+    font-size: 120%;
+  }
+}
+
+// Bump up the size of everything on 4k monitors
+@include breakpoint(2000px) {
+  html {
+    font-size: 200%;
+  }
+}
