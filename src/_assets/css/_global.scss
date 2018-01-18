@@ -32,9 +32,24 @@ header {
   }
 }
 
+.reveal {
+  color: $black;
+  font-size: rem-calc(18);
+}
+
+@include breakpoint(medium) {
+  .reveal.tiny {
+    width: 50%;
+  }
+}
+
 @include breakpoint(large) {
   .large-line-breaks span {
     display: block;
+  }
+
+  .reveal.tiny {
+    width: 30%;
   }
 }
 

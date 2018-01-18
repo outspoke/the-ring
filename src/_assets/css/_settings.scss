@@ -71,7 +71,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #fff,
-  secondary: #767676,
+  secondary: #0a0a0a,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -732,11 +732,11 @@ $responsive-embed-ratios: (
 $reveal-background: $white;
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
-$reveal-padding: $global-padding;
+$reveal-padding: $global-padding * 2;
 $reveal-border: 1px solid $medium-gray;
-$reveal-radius: $global-radius;
+$reveal-radius: rem-calc(5);
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba($black, 0.5);
 
 // 48. Slider
 // ----------
