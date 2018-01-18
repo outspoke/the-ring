@@ -35,6 +35,10 @@ header {
 .reveal {
   color: $black;
   font-size: rem-calc(18);
+
+  p {
+    margin-bottom: 1rem;
+  }
 }
 
 @include breakpoint(medium) {
